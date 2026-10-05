@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinNest – Household expense tracker</title>
+<meta name="description" content="FinNest helps you and your household track expenses, split bills and stay on top of recurring payments.">
+<style>
+:root{--ink:#1c2420;--muted:#5e6b64;--paper:#f7f6f1;--green:#2FA36B;--line:#e2e0d6}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font-weight:800;font-size:20px;color:var(--green)}
+nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--ink)}
+.hero{padding:54px 0 30px}
+h1{font-size:34px;line-height:1.2;margin:0 0 12px}
+h2{font-size:24px;margin:0 0 10px}
+h3{font-size:16px;margin:18px 0 4px}
+.sub{font-size:18px;color:var(--muted);max-width:560px}
+section{padding:30px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.card b{display:block;margin-bottom:4px}
+.muted{color:var(--muted);font-size:14px}
+ul{padding-left:20px}
+footer{padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--green)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">FinNest</div>
+  <nav><a href="#features">Features</a><a href="#premium">Premium</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#refund">Refunds</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <h1>Track money together, without the spreadsheet.</h1>
+  <p class="sub">FinNest is an Android app for personal and household expense tracking: log expenses, split bills, track money lent and borrowed, and never miss a recurring bill.</p>
+</div>
+
+<section id="features">
+  <h2>What FinNest does</h2>
+  <div class="grid">
+    <div class="card"><b>Expenses &amp; categories</b>Record spending and see where your money goes each month.</div>
+    <div class="card"><b>Shared households</b>Add family or housemates and keep one shared ledger.</div>
+    <div class="card"><b>Splits, lending &amp; borrowing</b>Track who owes what and settle up.</div>
+    <div class="card"><b>Recurring bill reminders</b>Add bills and get reminded before they are due.</div>
+  </div>
+  <p class="muted">FinNest does not connect to your bank accounts. Transactions are entered by you or recorded after a UPI payment you make in your own UPI app.</p>
+</section>
+
+<section id="premium">
+  <h2>FinNest Premium</h2>
+  <p>The core app is free. Premium is an optional, paid upgrade that unlocks:</p>
+  <ul>
+    <li>Paying through FinNest via UPI, with the transaction recorded automatically after a successful payment</li>
+    <li>Custom expense categories</li>
+    <li>Households with more than 2 members</li>
+    <li>Push notifications for recurring bill reminders</li>
+  </ul>
+  <p>Premium is a one-time purchase for a fixed period (monthly or yearly). It does <b>not</b> renew automatically. Prices are in Indian Rupees (INR) and are shown in the app before you pay. Payments for Premium are processed securely by Razorpay.</p>
+</section>
+
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <p class="muted">Last updated: 1 October 2026</p>
+  <h3>What we collect</h3>
+  <ul>
+    <li>Your name, email address and profile photo (from Google Sign-In or email sign-in).</li>
+    <li>An optional phone number and an optional UPI ID, if you add them.</li>
+    <li>The financial information you enter yourself: transactions, categories, notes, balances and recurring bills.</li>
+    <li>Records of UPI payments you start from FinNest (amount, payee UPI ID, status and reference), so they can be recorded in your account.</li>
+    <li>A device token, if you enable push notifications.</li>
+    <li>Premium purchase records (plan, amount, date and Razorpay payment ID).</li>
+  </ul>
+  <h3>Payments</h3>
+  <p>Premium purchases are handled by Razorpay. We never see or store your card, UPI PIN or bank details for Premium. UPI payments you start from FinNest are completed inside your own UPI app (such as Google Pay or PhonePe), and money moves directly from your bank to the payee. FinNest charges no fee on these payments.</p>
+  <h3>What we don't do</h3>
+  <ul>
+    <li>We do not sell your data and we do not show ads.</li>
+    <li>We do not access your bank accounts.</li>
+  </ul>
+  <h3>Service providers</h3>
+  <p>Your data is processed on our behalf by Supabase (database and login), Resend (emails you request), Google (Sign-In and push delivery) and Razorpay (Premium payments).</p>
+  <h3>Shared households</h3>
+  <p>Members of a household can see the shared transactions added there, tagged with the name of who added them.</p>
+  <h3>Your rights and deletion</h3>
+  <p>You can view and edit your data in the app at any time. You can permanently delete your account and personal data from Profile &rarr; Account settings &rarr; Delete account. Shared household entries may remain part of that household's shared record.</p>
+  <h3>Children</h3>
+  <p>FinNest is not directed at children under 13.</p>
+  <h3>Changes</h3>
+  <p>If this policy changes, we will update the date above.</p>
+</section>
+
+<section id="terms">
+  <h2>Terms &amp; Conditions</h2>
+  <p class="muted">Last updated: 1 October 2026</p>
+  <ul>
+    <li>FinNest is a record-keeping and tracking tool. It is not financial, tax or legal advice.</li>
+    <li>You are responsible for the accuracy of the information you enter and for keeping your account secure.</li>
+    <li>UPI payments are made through third-party UPI apps and banks. We are not responsible for their availability, failures or delays. Always check your UPI app history if a payment status is unclear.</li>
+    <li>Premium is a paid, fixed-period access to extra features. When it expires, paid features stop working, and your data remains available on the free plan.</li>
+    <li>Do not misuse the app, attempt to bypass Premium checks, or use it for unlawful purposes. We may suspend accounts that do.</li>
+    <li>We may update the app and these terms. Continued use means you accept the updated terms.</li>
+    <li>These terms are governed by the laws of India.</li>
+  </ul>
+</section>
+
+<section id="refund">
+  <h2>Refund &amp; Cancellation Policy</h2>
+  <p class="muted">Last updated: 1 October 2026</p>
+  <ul>
+    <li><b>Cancellation:</b> Premium does not auto-renew, so there is nothing to cancel. Access ends on the expiry date shown in the app.</li>
+    <li><b>Refunds:</b> Because Premium is a digital service that is activated immediately, payments are generally non-refundable once Premium is active.</li>
+    <li><b>Exceptions:</b> If you were charged twice for the same purchase, or your payment succeeded but Premium was not activated, email us with your payment ID and we will fix it or refund you.</li>
+    <li><b>Timeline:</b> Approved refunds are returned to the original payment method, usually within 5&ndash;7 business days.</li>
+    <li>Money you pay to other people through UPI is a transfer between you and them. FinNest cannot refund it.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>FinNest, India<br>
+  Email: <a href="mailto:yawalkarjignesh@gmail.com">yawalkarjignesh@gmail.com</a></p>
+  <p class="muted">We aim to reply within 2 business days.</p>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; FinNest. All rights reserved.</div></footer>
+</body>
+</html>
